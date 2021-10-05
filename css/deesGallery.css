@@ -1,0 +1,111 @@
+.item{
+    transition: .5s ease-in-out;
+}
+.item:hover{
+    filter: brightness(80%);
+}
+
+.navbar{
+    margin-bottom: 0;
+    background-color: black;
+
+}
+
+.navbarTabs {
+    color : black;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-size: large;
+}
+
+div ul li a{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.site-footer{
+    margin: 0;
+    padding-top: 20px;    
+    padding-bottom: 0%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 25vh;
+}
+
+.navbar {
+   margin: 0;
+   padding: 30px;    
+   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+   background-size: 400% 400%;
+   animation: gradient 15s ease infinite;
+   height: 10vh;
+}
+
+@keyframes gradient {
+   0% {
+       background-position: 0% 50%;
+   }
+   50% {
+       background-position: 100% 50%;
+   }
+   100% {
+       background-position: 0% 50%;
+   }
+}
+
+.footerLinks {
+    color: black;
+}
+a.btn.btn-link {
+    color: black;
+}
+
+.fa-tiktok{    
+    color:pink;
+    font-size:30px;
+  }
+  
+  i.fa.fa-envelope-o, i.fa.fa-phone{
+      font-size: 30px;
+      color: white;
+  }
+
+  .fa-google, .btnGoogle{
+    color: green;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+@media (max-width: 750px) {
+       
+        
+    .btnGoogle{
+        font-size: 80%;
+    }
+
+    .site-footer{
+        height: 40vh;
+    }
+}
+
+@media (max-width: 500px){
+     i.fa.fa-instagram, i.fa.fa-facebook {
+        font-size: 90%;
+    }
+    button.btn.btn-warning.btn-lg{
+        font-size: 90%;
+        float: right;
+    }
+    i.fa.faEnv.fa-envelope-o, i.fa.faPhone.fa-phone{
+        font-size: 90%;
+        color: black;
+    }
+}
+
+div.fancybox-caption{
+    font-size: 30px;
+}
+
+body{
+    background-color: rgb(250, 182, 193);
+}

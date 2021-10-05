@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Font Awesome, Bootstrap, CSS -->                
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />        
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" /> 
+    <link rel="stylesheet" href="css/deesContact.css">
+
+
+
+    <title>Dees Dessert</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">       
+    
+                <!-- Logo -->
+                <a class="navbar-brand" href="deesIndex.html">Dees Delish Dessert</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#deesNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <!-- Social Media Buttons -->
+                <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a role="button" class="btn btn-link" href="https://www.tiktok.com/"><i class="fa fa-tiktok"></i></a>
+                <a role="button" class="btn btn-link" href="tel:12065551234"><i class="fa faPhone fa-phone"></i></a>
+                <a role="button" class="btn btn-link" href="mailto:deesdesserta@gmail.com"><i class="fa faEnv fa-envelope-o"></i></a>
+           
+    
+            <!-- Contents of Navbar -->
+            <div class="collapse navbar-collapse" id="deesNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="active"><a class="navbarTabs " href="deesIndex.html">Home </a></li>                    
+                    <li><a class="navbarTabs" href="deesGallery.html">Gallery</a></li>
+                    <li><a class="navbarTabs" href="deesEvents.html">Events </a></li>
+                    <li><a class="navbarTabs" href="deesContact.html">Contact </a></li>
+                  </ul>                  
+            </div>
+        </div>
+        <span class="requestButton col-md-4 col-xl-2 mt-1"> 
+            <button class="btn btn-warning btn-lg" type="button" data-toggle="modal" data-target="#reqServ">Request Services</button>                
+        </span>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3 class="formHeader">Feel free to fill out the below form and have your order request sent directly to us <br>You can also contact us by the information listed at the top and bottom of this site</br></h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form>
+                    <div class="form-group">
+                        <label for="formName">Name</label>
+                        <input type="text" class="form-control" id="formName" placeholder="First Name Last Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="formNumber">Contact Number</label>
+                        <input type="textarea" class="form-control" id="formNumber" placeholder="912-888-7654">
+                    </div>
+                    <div class="form-group">
+                      <label for="formEmail">Email address</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlSelect2">Please describe the type of Dessert you would like</label>
+                      <select multiple class="form-control" id="exampleFormControlSelect2">
+                        <option>Cheesecake</option>
+                        <option>Cupcake</option>
+                        <option>Strawberries</option>
+                        <option>Glam Pops</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="formDescription">Please Describe the type of Dessert you would like</label>
+                      <textarea class="form-control" id="formDescription" rows="3"></textarea>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Request Services Modal -->
+    <div id="reqServ" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Request Services</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>                    
+                </div>                
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                           <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="reqName">What is your name?</label>
+                                    <input type="text" class="form-control form-control-sm" id="reqDessert" placeholder="Name"> 
+                                </div>
+                               <div class="form-group col-12">
+                                   <label class="sr-only" for="reqDessert">What type of dessert would you like?</label>
+                                   <input type="text" class="form-control form-control-sm" id="reqDessert" placeholder="Dessert Type"> 
+                               </div>
+                               <div class="form-group col-12">
+                                   <label class="sr-only" for="reqDate">When do you need it by?</label>
+                                    <input type="date" class="form-control-sm" id="reqDate" placeholder="Due Date MM/DD/YY">
+                               </div>
+                               <div class="form-group col-12">
+                                    <label class="sr-only" for="reqEvent">Whats the occasion?</label>
+                                    <input type="text" class="form-control-sm" id="reqEvent" placeholder="Occasion i.e Wedding">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="reqContact">How can we contact you?</label>
+                                    <input type="text" class="form-control-sm" id="reqContact" placeholder="Contact 912-111-2222">
+                                    <input type="email" class="form-control-sm" id="reqContact" placeholder="email@deesdesserts.com">
+                                </div>
+                               <div class="col">
+                                   <div class="form-check">
+                                       <input class="form-check-input" type="checkbox">
+                                       <label class="form-check-label">Remember me</label>
+                                   </div>                                   
+                               </div>
+                           </div>
+                           <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                           </div> 
+                        </form>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="container">
+    <div class="col">
+        <div class="row">
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+    <footer class="site-footer"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li class= "active"><a class="footerLinks" href="deesIndex.html">Home </a></li>
+                        <li><a class="footerLinks" href="deesGallery.html">Gallery</a></li>                      
+                        <li><a class="footerLinks" href="deesEvents.html">Events</a></li>
+                        <li><a class="footerLinks" href="deesContact.html">Contact </a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5 text-center">
+                    <div class="col">
+                        <h5>Social</h5>                        
+                            <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                            <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                            <a class="btn"><i class="fa fa-tiktok"></i></a>
+                    
+                    </div>
+                    <div class="col">
+                        <a role="button" class="btn btnGoogle btn-link" href="#"><i class="fa fa-google"></i> Leave me a review!</a>
+                    </div>               
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a role="button" class="btn btn-link" href="tel:12065551234"><i class="fa fa-phone"></i> <span class="d-none d-md-inline"> 1-206-555-1234</span></a>
+            	    <a role="button" class="btn btn-link" href="mailto:deesdesserta@gmail.com"><i class="fa fa-envelope-o"></i> <span class="d-none d-md-inline">deesdesserts@gmail.com</span></a>
+                </div>
+            </div>
+        </div> 
+    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
