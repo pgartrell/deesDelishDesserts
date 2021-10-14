@@ -2,7 +2,7 @@
   "name": "deesdesserts",
   "version": "1.0.0",
   "description": "",
-  "main": "deesIndex.html",
+  "main": "index.html",
   "scripts": {
     "lite": "lite-server",
     "start": "npm run lite",
